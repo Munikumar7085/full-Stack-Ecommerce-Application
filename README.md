@@ -1,4 +1,4 @@
-# amazon_clone
+# Full Stack Ecommerce Application
 
 A new Flutter project.
 
