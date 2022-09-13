@@ -14,7 +14,7 @@ async function connectDatabase() {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   }, () => {
-      console.log("connected database");
+      console.log("conn ected database");
   });
 }
 connectDatabase();

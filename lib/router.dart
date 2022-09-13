@@ -1,5 +1,6 @@
 import 'package:full_stack_ecommerce/common/widgets/bottom_navigation.dart';
 import 'package:flutter/material.dart';
+import 'package:full_stack_ecommerce/features/admin/screens/add_product_screen.dart';
 import 'package:full_stack_ecommerce/features/auth/screens/authscreen.dart';
 import 'package:full_stack_ecommerce/features/home/screens/home_screen.dart';
 
@@ -19,6 +20,11 @@ Route<dynamic> generateRoute(RouteSettings routeSettings) {
       return MaterialPageRoute(
         settings: routeSettings,
         builder: (_) => const BottomBar(),
+      );
+    case AddProductScreen.routeName:
+      return MaterialPageRoute(
+        settings: routeSettings,
+        builder: (_) => const AddProductScreen(),
       );
     default:
       return MaterialPageRoute(

@@ -8,9 +8,14 @@ class CustomButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(onPressed: action,
-    style: ElevatedButton.styleFrom(
-      minimumSize: const Size(double.infinity, 50)
-    ), child: Text(text,style: const TextStyle(fontSize: 18),),);
+    return ElevatedButton(
+      onPressed: action,
+      style: ElevatedButton.styleFrom(
+          minimumSize: const Size(double.infinity, 50)),
+      child: Text(
+        text,
+        style: const TextStyle(fontSize: 18),
+      ),
+    );
   }
 }
